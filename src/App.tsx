@@ -1,4 +1,4 @@
-import { View, StyleSheet, Alert } from "react-native";
+import { View, Alert } from "react-native";
 import React from "react";
 import { ThemeProvider } from "./contexts/themeContext";
 import CustomButton from "./components/CustomButton";
@@ -19,8 +19,3 @@ const App = () => {
 
 export default App;
 
-const styles = StyleSheet.create({
-  heading: {
-    fontFamily: "Quicksand-Bold",
-  },
-});
