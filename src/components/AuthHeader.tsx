@@ -1,12 +1,13 @@
 import React from 'react';
 import { Text, TouchableOpacity, StyleSheet, TextStyle } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-// import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import {
   COLORS,
   SPACING,
   Weights,
   Z_INDEX,
+  FONT_SIZE
 } from "../theme/styles/spacing";
 
 // Interface for the Header component props
@@ -25,7 +26,7 @@ const AuthHeader: React.FC<HeaderProps> = ({ title, textStyle }) => {
         onPress={() => navigation.goBack()}
         style={styles.backButton}
       >
-        {/* <Icon name="arrow-back" size={FONT_SIZE.xl} color={COLORS.black} /> */}
+        <Icon name="arrow-back" size={FONT_SIZE.xl} color={COLORS.black} />
       </TouchableOpacity>
       <Text style={[styles.topHeading, textStyle]}>{title}</Text>
     </>
